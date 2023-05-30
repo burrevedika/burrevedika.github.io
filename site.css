@@ -1,6 +1,6 @@
 h2 {
     color: blue;
 }
-table, th, td {
+table, th, tr,td {
   border: 1px solid black;
 }
