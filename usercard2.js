@@ -1,5 +1,5 @@
 let mhdoldinfo={
-    imgurl:"https://th.bing.com/th/id/OIP.N5gJ94vPwP29yVrJxqyK_gHaJ3?pid=ImgDet&rs=1",
+    imgurl:"https://img.mensxp.com/media/content/2020/Jul/Bollywood-Movies-Actors-Shot-With-Severe-Injuries600_5f0ed23b6f0e8_250x375.jpeg",
     name:"Mahendra singh Dhoni",
     Description:"Ticket collector"
 }
