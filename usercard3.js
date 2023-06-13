@@ -4,23 +4,11 @@ let MSDhonioldinfo={
     description:"Ticket collector"
 } 
 
-let MSDyounginfo={
-    imgurl:"https://3.bp.blogspot.com/-6qxNEvIte4g/V-vyZaGjhKI/AAAAAAAALSM/vhkYKRK2-zMqsWEm_Cfbxv_bHJ9WNS3XACLcB/w1200-h630-p-k-no-nu/msd%2Bms%2Bdhoni%2Bmovie%2Bin%2Btelugu%2Badvance%2Bprebook%2Btickets%2Btheaters%2Blist%2Bshow%2Btimings.jpg",
-    name: "Mahendra Singh Dhoni",
-    description:"Captian of Indian Team"
-}
-
-let isMSDold=true;
 let displayobject;
-let flipdata = function(){
-    if (isMSDold==true){
-        displayobject=MSDyounginfo;
-        isMSDold=false;
-    }
-    else{
-        displayobject=MSDhonioldinfo;
-        isMSDold=true;
-    }
+let getRandomUser = function(){
+    fetch("https://randomuser.me/api")
+    .then(response => response.json())
+    .then(data=>console.log(data))
     document.getElementById("MSD-img").src=displayobject.imgurl;
     document.getElementById("MSD-name").innerHTML=displayobject.name;
     document.getElementById("MSD-desc").innerHTML=displayobject.description;
