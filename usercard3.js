@@ -7,7 +7,7 @@ let MSDhonioldinfo={
 
 let displayobject={
     name:"",
-    imageurl:"",
+    imgurl:"",
     description:""
 };
 let getRandomUser = function(){
@@ -16,7 +16,7 @@ let getRandomUser = function(){
     .then(data=>{
         displayobject.name=data.results[0].name.first + " " + data.results[0].name.last
         //displayobject.name = "abcd"
-        displayobject.imageurl=data.results[0].picture.large
+    displayobject.imgurl=data.results[0].picture.large
        displayobject.description=data.results[0].gender
         document.getElementById("MSD-img").src=displayobject.imgurl;
         document.getElementById("MSD-name").innerHTML=displayobject.name;
